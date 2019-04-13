@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestsFrag"
+    android:orientation="vertical"
+    android:background="@color/lightViolet"
+    android:layoutDirection="ltr">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your friendship requests :"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:id="@+id/requestsTxt"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/requestsList"
+        android:dividerHeight="20dp"
+        android:divider="@color/lightViolet"
+        android:background="@color/white"/>
+</LinearLayout>

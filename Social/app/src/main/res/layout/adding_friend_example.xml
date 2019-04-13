@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/sugImage"
+        android:src="@mipmap/user_icon"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mohamed yossef"
+            android:textColor="@color/violet"
+            android:textStyle="bold"
+            android:id="@+id/sugName"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Friend"
+                android:textColor="@color/white"
+                android:background="@color/lightViolet"
+                android:id="@+id/add"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove"
+                android:background="@color/silver"
+                android:textColor="@color/white"
+                android:id="@+id/remove"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

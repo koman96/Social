@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/menu_icon"
+        android:layout_weight="1"/>
+
+    <include
+        layout="@layout/notification_layout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/mess_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/messages"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/prof_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/profile"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/newFeed_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@mipmap/newest_feed"
+        android:layout_weight="1"/>
+</LinearLayout>

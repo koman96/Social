@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@mipmap/user_icon"
+            app:civ_border_color="@color/violet"
+            app:civ_border_width="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="start"
+            android:id="@+id/postLogo" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/postOwner"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/violet"
+            android:textStyle="bold"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:layout_marginTop="2dp"
+            android:id="@+id/postTime"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

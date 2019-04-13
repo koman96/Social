@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EditProfFrag"
+    android:layoutDirection="ltr">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/user_icon"
+                app:civ_border_color="@color/lightViolet"
+                app:civ_border_width="1dp"
+                android:id="@+id/myImage"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:textColor="@color/violet"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/newName"
+                    android:hint="type here"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edittext_background"
+                    android:textColor="@color/violet"
+                    android:textColorHint="@color/violet"
+                    android:padding="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender :"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:textColor="@color/violet"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="@color/violet"
+                        android:checked="true"
+                        android:layout_marginRight="5dp"
+                        android:id="@+id/male"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="@color/violet"
+                        android:id="@+id/female"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birth date :"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:textColor="@color/violet"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="click here"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/violet"
+                    android:padding="5dp"
+                    android:background="@color/white"
+                    android:id="@+id/dateTxt" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Country :"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:textColor="@color/violet"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/country"
+                    android:layout_weight="2"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="save changes"
+                android:background="@color/lightViolet"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="5dp"
+                android:id="@+id/save"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/progress_dialog"/>
+</RelativeLayout>

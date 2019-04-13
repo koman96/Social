@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFrag"
+    android:orientation="vertical"
+    android:background="@color/lightViolet"
+    android:layoutDirection="ltr">
+
+    <include
+        layout="@layout/toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainFrag"
+        android:id="@+id/drawer"
+        android:layout_marginTop="10dp">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/userPosts"
+                android:dividerHeight="40dp"
+                android:layout_marginBottom="10dp"/>
+
+        <include
+            layout="@layout/side_bar"/>
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PostTextFrag"
+    android:layoutDirection="ltr">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="62dp"
+                    android:layout_height="68dp"
+                    android:src="@mipmap/user_icon"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp"
+                    android:layout_gravity="start"
+                    android:id="@+id/postLogo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="post owner"
+                    android:id="@+id/postOwner"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/violet"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"/>
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:padding="10dp"
+                android:hint="say something about this ..."
+                android:gravity="left"
+                android:id="@+id/myPostText"
+                android:textColor="@color/violet"
+                android:textColorHint="@color/violet" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/postImage" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/silver"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:enabled="false"
+        android:id="@+id/share"/>
+
+    <include
+        layout="@layout/progress_dialog"/>
+</RelativeLayout>
